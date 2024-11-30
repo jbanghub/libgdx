@@ -13,8 +13,7 @@
         "https:\\/\\/github\\.com\\/(?<depName>.*)\\/releases\\/download\\/.*\\/.*-(?<curentValue>.*).jar"
       ],
       "matchStringsStrategy": "recursive",
-      "datasourceTemplate": "github-releases",
-      "extractVersion": "^v?(?<version>.*)$"
+      "datasourceTemplate": "github-releases"
     }
   ]
 }
