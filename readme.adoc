@@ -1,0 +1,5 @@
+# JBangHub Catalog for libgdx 
+
+This is a catalog of JBang scripts for libgdx.
+
+Curated and created by the community.

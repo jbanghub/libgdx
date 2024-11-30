@@ -1,0 +1,9 @@
+{
+  "catalogs": {},
+  "aliases": {
+    "gdx-liftoff": {
+      "script-ref": "https://github.com/libgdx/gdx-liftoff/releases/download/v1.12.1.17/gdx-liftoff-1.12.1.17.jar"
+    }
+  },
+  "templates": {}
+}
