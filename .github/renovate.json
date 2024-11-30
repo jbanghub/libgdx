@@ -3,16 +3,18 @@
   "extends": [
     "local>jbanghub/.github"
   ],
-  "customManagers": [
+  "regexManagers": [
     {
-      "customType": "regex",
       "fileMatch": [
         ".?jbang-catalog.json"
       ],
       "matchStrings": [
-        "https:\\/\\/github\\.com\\/(?<depName>.*)\\/releases\\/download\\/(?<currentValue>.*)\\/.*\\.jar"
+        "https:\\/\\/github\\.com\\/(?<depName>.*)\\/releases\\/download\\/(?<currentValue>.*)\\/.*\\.jar",
+        "https:\\/\\/github\\.com\\/(?<depName>.*)\\/releases\\/download\\/.*\\/.*-(?<curentValue>.*).jar"
       ],
-      "datasourceTemplate": "github-releases"
+      "matchStringsStrategy": "recursive",
+      "datasourceTemplate": "github-releases",
+      "extractVersion": "^v?(?<version>.*)$"
     }
   ]
 }
