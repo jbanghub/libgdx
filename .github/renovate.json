@@ -3,8 +3,9 @@
   "extends": [
     "local>jbanghub/.github"
   ],
-  "regexManagers": [
+  "customManagers": [
     {
+      "customType": "regex",
       "fileMatch": [
         ".?jbang-catalog.json"
       ],
